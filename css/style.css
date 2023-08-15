@@ -170,7 +170,7 @@ input{
   color: red; /* Placeholder color for invalid email */
 }
 
-input::placeholder{font-weight: var(--fw-500); color: black;}
+input::placeholder{font-weight: var(--fw-500); color: var(--Grayish-Blue);}
 
 .input-container {
   position: relative; /* Ensure the container is positioned */
