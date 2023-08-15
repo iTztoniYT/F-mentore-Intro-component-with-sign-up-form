@@ -206,6 +206,7 @@ input::placeholder{font-weight: var(--fw-500); color: black;}
 }
 
 .button-bg{
+  border: none;
   background-color: var(--Green);
   border-radius: 0.625rem ;
 }
