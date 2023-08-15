@@ -11,7 +11,6 @@
     --Dark-Blue: hsl(249, 10%, 26%);
     --Grayish-Blue: hsl(246, 25%, 77%);
 
-    --tester: 1px solid black;
     
     --ff-primary: 'Poppins', sans-serif;
 
@@ -98,18 +97,16 @@ body{
 .flex{
     display: flex;
     flex-direction: column;
-    gap: var(--gap, 5rem);
-    padding: 1rem;
+    gap: var(--gap, 1.3rem);
+    margin: 1.3rem;
 }
 
 .left-wrapper{
     text-align: center;
     color: white;
-    /* max-width: 21.437rem; */
 }
 
 .left-wrapper > h1:first-of-type{
-  /* /* font-weight: 700;  */
   font-size: 2rem; 
   line-height: 2rem;
 }
@@ -142,8 +139,13 @@ body{
 
 .free-trail p{
   margin: 0 auto;
-  max-width: 200px;
+  max-width: 12.5rem;
 }   
+
+form, .trail-bg{
+  box-shadow: 0 7px hsla(249, 10%, 26%, 0.404);
+
+}
 
 .trail-bg{
   background-color: var(--Blue);
@@ -158,9 +160,10 @@ form{
 }
 
 input{
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid var(--Grayish-Blue); 
+  margin: 0 auto;
+  padding: 0.625rem;
+  border-radius: 0.3125rem;
+  border: 0.0625rem solid var(--Grayish-Blue); 
 }
 
 input::placeholder{font-weight: var(--fw-500); color: black;}
@@ -178,26 +181,28 @@ input::placeholder{font-weight: var(--fw-500); color: black;}
 
 .agreement-text{
   color: var(--Grayish-Blue);
-  font-size: 10px;
+  font-size: 0.625rem;
   text-align: center;
   opacity: 0.9;
 }
 
 .agreement-cl-red{color: var(--Red);}
 
-/* Box shadows */
 
+.feedBack{
+  font-size:  0.625rem;
+  color: var(--Red);
+  font-weight: 100;
+}
 
-/* Media Queries */
 @media screen and (min-width: 48rem) {
   .flex{
-    display: flex;
     flex-direction: row;
+    gap: var(--gap, 5rem);
 
   }
 
   .left-wrapper{
-    display: flex;
     flex-direction: column;
     gap: var(--gap, 1rem);
     align-self: center;
@@ -223,7 +228,6 @@ input::placeholder{font-weight: var(--fw-500); color: black;}
 
 
   .free-trail p{
-    /* font-size: 15px; */
     margin: 0 auto;
     max-width: 31.25rem;
   }   
