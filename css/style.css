@@ -160,13 +160,44 @@ form{
 }
 
 input{
-  margin: 0 auto;
-  padding: 0.625rem;
+  width: 100%;
+  padding: 0.725rem;
   border-radius: 0.3125rem;
   border: 0.0625rem solid var(--Grayish-Blue); 
 }
 
+.input-container input.invalid-email::placeholder {
+  color: red; /* Placeholder color for invalid email */
+}
+
 input::placeholder{font-weight: var(--fw-500); color: black;}
+
+.input-container {
+  position: relative; /* Ensure the container is positioned */
+  margin-bottom: 1rem; /* Add spacing between input fields */
+
+  /* Other styling properties */
+}
+
+.error-img,
+.error-msg{
+  position: absolute;
+  display: none;
+
+}
+
+.error-img {
+  top: 50%;
+  right: 0.625rem; 
+  transform: translateY(-50%);
+}
+
+.error-msg{
+  right: 0.0625rem;
+  font-size:  0.625rem;
+  color: var(--Red);
+  font-weight: 100;
+}
 
 .button-font{
   text-transform:uppercase;
@@ -189,13 +220,21 @@ input::placeholder{font-weight: var(--fw-500); color: black;}
 .agreement-cl-red{color: var(--Red);}
 
 
-.feedBack{
-  font-size:  0.625rem;
-  color: var(--Red);
-  font-weight: 100;
+.block{
+  display: block !important;
 }
 
+.error-border{
+  border-color: var(--Red);
+}
+
+
 @media screen and (min-width: 48rem) {
+
+  body{
+    background-image: url(../images/bg-intro-mobile.png);
+  }
+
   .flex{
     flex-direction: row;
     gap: var(--gap, 5rem);
